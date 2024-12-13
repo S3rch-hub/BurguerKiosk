@@ -3,7 +3,7 @@ package Products;
 import java.util.List;
 
 public class Menu implements Products{
-    private static int discount;
+    private static int discount = 5; // Descuento se lee del fichero de cofiguracion
     private List<IndividualProduct> products;
 
 
