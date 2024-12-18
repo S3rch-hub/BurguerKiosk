@@ -1,5 +1,6 @@
 package Products;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
@@ -34,7 +35,13 @@ public class Order {
         return totalAmount;
     }
     public void addProduct(Products p){
-
+        if (this.products == null)
+        {
+            this.products = new ArrayList<Products>();
+        }
+        
+        this.products.add(p);
+        
     }
 
 
